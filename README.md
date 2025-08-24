@@ -60,4 +60,4 @@ Server will be available at "http://localhost:5000"
 
 ### 🔗 Deployment
 
-Backend can be deployed on Render, Heroku, or Vercel.
+Backend can be deployed on Render.
