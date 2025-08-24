@@ -9,6 +9,7 @@ const router = express.Router();
 router.post("/", async (req, res) => {
   try {
     const { type, sourceUserId, targetUserId } = req.body;
+      console.log(req.body); // Debug
 
     // Create a dynamic message
     let message = "";
@@ -48,6 +49,7 @@ router.post("/", async (req, res) => {
     });
   } catch (error) {
     res.status(500).json({ error: error.message });
+    console.log("connection failed")
   }
 });
 
